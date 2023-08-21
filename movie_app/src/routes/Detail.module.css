@@ -1,0 +1,54 @@
+.container {
+    background-color: white;
+    margin-bottom: 70px;
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 5px;
+    color: #adaeb9;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-template-areas: 
+        "home_button title"
+        "image image"
+        "year rating"
+        "likes downloads"
+        "story story"
+    ;
+    grid-gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.home {
+    grid-area: home_button;
+}
+
+.movie_title {
+    grid-area: title;
+}
+
+.movie_img {
+    grid-area: image;
+}
+
+.movie_year {
+    grid-area: year;
+}
+
+.movie_rating {
+    grid-area: rating;
+}
+
+.movie_likes {
+    grid-area: likes;
+}
+
+.movie_downloads {
+    grid-area: downloads;
+}
+
+.movie_story {
+    grid-area: story;
+}
